@@ -8,19 +8,190 @@
   </head>
   <body>
     <main>
+      <!-- Les boutons  -->
       <div class="boutons">
         <button
-          class="w-60 h-20 bg-cyan-400 hover:bg-cyan-300 shadow-lg shadow-cyan-400/70 rounded-md font-bold m-10"
+          class="w-60 h-20 bg-cyan-400 hover:bg-cyan-300 shadow-lg shadow-cyan-400/70 rounded-md font-bold m-10 border-4 border-cyan-500/90"
         >
           Mon Bouton
         </button>
 
         <button
-          class="w-60 h-20 bg-green-400 hover:bg-green-300 shadow-lg shadow-green-400/70 rounded-3xl font-bold m-10"
+          class="w-60 h-20 bg-green-400 hover:bg-green-300 shadow-lg shadow-green-400/70 rounded-3xl font-bold m-10 border-4 border-green-500/90"
         >
           Mon Bouton
         </button>
       </div>
+
+      <!-- Pour avoir de beau dégradé  -->
+      <div
+        class="h-14 bg-gradient-to-r from-cyan-500/50 to-blue-500/70 mb-2 ml-4 mr-4 rounded-md"
+      ></div>
+      <div
+        class="h-14 bg-gradient-to-r from-yellow-300 to-cyan-300 mb-20 ml-4 mr-4 rounded-md"
+      ></div>
+
+      <!-- Une sorte de banniere  -->
+      <div class="contenu bg-gray-800">
+        <section class="sm:mt-20">
+          <div class="relative container mx-auto bg-gray-100">
+            <img
+              src="ressources/ai-generated-8928672_1920.jpg"
+              alt="venise"
+              class="w-full object-cover h-72 sm:w-1/2 sm:absolute sm:h-full"
+            />
+
+            <div class="py-10 px-10 sm:ml-auto sm:w-1/2">
+              <h2 class="text-4xl mb-5">Roswell...</h2>
+              <p class="font-thin text-lg">
+                Le 8 juillet 1947, un objet volant non identifié s'écrase près
+                de Roswell, au Nouveau-Mexique. Les militaires américains
+                affirment qu'il s'agit d'un ballon-sonde météorologique. Mais
+                pour beaucoup, il s'agit d'un vaisseau spatial extraterrestre.
+                Depuis, Roswell est devenue la Mecque des ufologues.
+              </p>
+              <a
+                href="#"
+                class="inline-flex ring-1 ring-slate-300 rounded shadow-md items-center justify-between p-3 bg-gradient-to-r from-red-300 to-orange-300 mt-8 mb:mt-20"
+              >
+                <span class="mr-4">Prends un ticket pour la visite</span>
+                <img
+                  src="ressources/paper-plane.svg"
+                  class="w-6"
+                  alt="paper plane"
+                />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
+
+    <!-- Si je veux un footer deja fait c'est juste ici :p  -->
+    <div class="h-full bg-gray-100 mt-10">
+      <!-- Container global -->
+      <div class="flex flex-col h-full">
+        <!-- Contenu -->
+
+        <footer class="mt-auto bg-white">
+          <div
+            class="max-w-xl mx-auto p-4 grid grid-cols-2 lg:max-w-7xl lg:grid-cols-6 md:py-10"
+          >
+            <div class="m-3 md:m-5">
+              <h5 class="mb-3 text-gray-900 text-lg font-semibold sm:text-xl">
+                Best food 🥐
+              </h5>
+              <ul>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">French</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Japanese</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Italian</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Spanish</li>
+              </ul>
+            </div>
+            <div class="m-3 md:m-5">
+              <h5 class="mb-3 text-gray-900 text-lg font-semibold sm:text-xl">
+                Services ⏲️
+              </h5>
+              <ul>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Suit</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Sport</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Pool</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Taxi</li>
+              </ul>
+            </div>
+
+            <div class="m-3 md:m-5">
+              <h5 class="mb-3 text-gray-900 text-lg font-semibold sm:text-xl">
+                Worldwide 🌎
+              </h5>
+              <ul>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Tokyo</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">New York</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">London</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Moscow</li>
+              </ul>
+            </div>
+            <div class="m-3 md:m-5">
+              <h5 class="mb-3 text-gray-900 text-lg font-semibold sm:text-xl">
+                Rated 10/10 👌
+              </h5>
+              <ul>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">
+                  Tripadvisor
+                </li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Airbnb</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Booking</li>
+                <li class="my-2 text-gray-800 text-md sm:text-lg">Hotel</li>
+              </ul>
+            </div>
+
+            <div class="col-span-2 mt-5 md:m-5">
+              <h3
+                class="mb-5 font-semibold text-gray-800 tracking-wider uppercase text-sm sm:text-lg"
+              >
+                Subscribe to our newsletter 📬
+              </h3>
+              <form>
+                <label for="email-address" class="sr-only">Email address</label>
+                <input
+                  type="email"
+                  name="email-address"
+                  id="email-address"
+                  required
+                  placeholder="Enter your email"
+                  class="appearance-none w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-4 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:placeholder-gray-400"
+                />
+                <button
+                  class="block w-full mt-3 bg-red-500 flex items-center justify-center rounded-md py-2 px-4 text-base font-medium text-white"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div
+            class="max-w-7xl mx-auto mt-4 border-t border-gray-200 p-6 flex flex-col items-center md:mt-8 md:flex-row md:py-5 md:justify-between"
+          >
+            <ul class="flex space-x-6 md:order-2">
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <img
+                  class="h-6 w-6"
+                  src="ressources/twitter-sign.svg"
+                  alt="twitter icon"
+                />
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <img
+                  class="h-6 w-6"
+                  src="ressources/facebook.svg"
+                  alt="facebook icon"
+                />
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <img
+                  class="h-6 w-6"
+                  src="ressources/instagram.svg"
+                  alt="instagram icon"
+                />
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-500">
+                <img
+                  class="h-6 w-6"
+                  src="ressources/tiktok.svg"
+                  alt="tiktok icon"
+                />
+              </a>
+            </ul>
+            <p class="mt-4 text-base text-gray-400 md:mt-0 md:order-1">
+              &copy; Footer,All rights reserved
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
